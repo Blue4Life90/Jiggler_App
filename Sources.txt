@@ -1,0 +1,6 @@
+customtkinter - https://customtkinter.tomschimansky.com/
+pyautogui - https://pyautogui.readthedocs.io/en/latest/
+datetime - https://docs.python.org/3/library/datetime.html
+icons - https://www.flaticon.com/search?word=button
+        https://www.iconfinder.com/
+
