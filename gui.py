@@ -1,8 +1,9 @@
 import customtkinter as ct
 import datetime as time
 import pyautogui
-from PIL import Image
+from PIL  import Image, ImageTk
 import function
+import os
 
 ct.set_appearance_mode("dark")
 
@@ -10,8 +11,11 @@ ct.set_appearance_mode("dark")
 class App(ct.CTk):
     def __init__(self):
         super().__init__()
-        self.title("The Jiggler")
+        self.title("Jiggler")
         self.geometry("300x350")
+        self.iconpath = ImageTk.PhotoImage(file=os.path.join("images","Titlebar.ico"))
+        self.wm_iconbitmap()
+        self.iconphoto(False, self.iconpath)
 
         # Create a grid layout with a single column and row
         self.columnconfigure(0, weight=1)
